@@ -1,133 +1,147 @@
-# Awesome-Subscription-Account-Administration
+# Awesome Subscription Account Administration & Recurring Billing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Subscription Account Administration
-
-> A curated list of top Subscription Account Administration platforms — both SaaS/Hosted commercial solutions and open-source alternatives for managing customer accounts, subscriptions, and billing operations from an administrative dashboard.
-> 🌟 Star this repo if you find it useful! 🌟
+> A curated list of top Subscription Account Administration platforms, recurring billing engines, and open-source monetization infrastructure for managing customer accounts, subscriptions, invoicing, and billing operations from an administrative dashboard.
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Stripe Dashboard](#stripe-dashboard)
-  - [Chargebee Account Management](#chargebee-account-management)
-  - [Zuora Central](#zuora-central)
-  - [Recurly Admin](#recurly-admin)
-  - [Paddle Dashboard](#paddle-dashboard)
-  - [Rebilly Admin](#rebilly-admin)
 - [Open-Source Software](#-open-source-software)
-  - [Kill Bill & Kaui](#kill-bill--kaui)
-  - [Lago](#lago)
-  - [Invoice Ninja](#invoice-ninja)
-  - [Akaunting](#akaunting)
-  - [Wallos](#wallos)
-  - [SubTracker](#subtracker)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global subscription and billing management software market is valued at approximately **$7.5B to $8.9B** (with projections climbing past $18B+ at ~14% CAGR). The sector exhibits a **two-tier market concentration structure**: the high-end enterprise layer is **moderately concentrated** around dominant platform giants and ERP/Q2C consolidators (such as Stripe, Zuora, and Salesforce), while the small-to-mid market (SMB) and specialized developer tiers remain **fragmented** across specialized merchant-of-record providers, modular billing gateways, and emerging open-source orchestration solutions.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Subscription Account Administration platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Subscription Account Administration platforms sorted by enterprise scale (valuation / market capitalization / annual revenue) in descending order:
 
-### Stripe Dashboard
-**Type:** Unified payments and billing administration console
-The Stripe Dashboard is the administrative control plane for Stripe Billing, providing a single interface to manage customers, subscriptions, invoices, payment methods, and revenue reporting. It is the lowest-friction option for teams already processing payments through Stripe, with no separate billing vendor to integrate [citation:3]. The Dashboard includes built-in tools for handling disputes, applying credits, and managing dunning settings.
-
-### Chargebee Account Management
-**Type:** Subscription operations console with CRM/ERP integrations
-Chargebee's administrative console provides back-office teams with tools to manage subscriptions, issue refunds, adjust invoices, and handle complex lifecycle events like plan changes and grandfathering. It is designed for mid-market SaaS companies with dedicated finance teams needing deep subscription control [citation:3]. The platform offers robust invoicing, dunning, and revenue reporting, with strong integrations into CRM and ERP systems.
-
-### Zuora Central
-**Type:** Enterprise monetization administration hub
-Zuora Central is the administrative hub for Zuora's enterprise subscription billing platform, providing control over products, customers, subscriptions, invoices, and revenue recognition (RevPro). It is built for large enterprises with complex, global monetization models where finance and compliance requirements are as important as billing mechanics [citation:3].
-
-### Recurly Admin
-**Type:** Subscription management with revenue recovery focus
-Recurly's admin interface provides subscription management with a strong emphasis on dunning and involuntary-churn recovery. Its recovery engine uses machine learning to determine optimal retry timing for failed transactions, and it has strong support for digital wallets [citation:3]. The interface is designed for subscription-heavy businesses, particularly B2C and consumer brands.
-
-### Paddle Dashboard
-**Type:** Merchant of Record administration
-The Paddle Dashboard provides administrative control for Paddle's Merchant of Record model, handling payment processing, tax compliance, and subscription billing on behalf of the vendor. It removes the burden of global tax registration and remittance, making it attractive for teams selling internationally without wanting to manage tax compliance directly.
-
-### Rebilly Admin
-**Type:** Subscription and payment administration
-Rebilly provides an administrative interface for managing subscriptions, customers, and payment operations. It is often evaluated alongside Recurly and Chargebee for mid-market subscription businesses, with a focus on flexible payment gateway integrations and subscription lifecycle control.
+| Platform | Scale (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Core Focus & Best For |
+|:---|:---|:---|:---|:---|
+| **[Stripe Billing](https://stripe.com/billing)** | **$159B Valuation** (>$5.1B Net Revenue) | **0.5%** per recurring transaction (Starter) or **0.8%** (Scale) + 2.9% + 30¢ card processing fee | **$0 monthly fee**; Free test mode forever with full API access & simulation; Free trials configurable up to 730 days (2 years) | Developer-first unified payments & billing control plane with automated tax and dunning |
+| **[Chargebee](https://www.chargebee.com/)** | **$3.5B Valuation** (~$200M+ ARR) | **$599/month** (Performance plan, billed annually) for up to $100k/mo MRR + 0.75% overage | **Free forever Starter plan** up to **$250,000 cumulative lifetime billing**; Free trials configurable up to 5,470 days | Mid-market and scaling SaaS companies needing deep CRM/ERP integrations and complex billing logic |
+| **[Zuora Central](https://www.zuora.com/)** | **$1.7B Valuation** (Acquired by Silver Lake / GIC; ~$450M ARR) | **~$75,000/year** base enterprise contract deployment (custom ACV quotes) | **No free tier**; Sandbox test environments available with enterprise sales agreements; flexible trial overrides | Global enterprises with complex quote-to-cash (Q2C) flows and strict ASC 606 / IFRS 15 revenue recognition |
+| **[Paddle](https://www.paddle.com/)** | **$1.4B Valuation** (~$100M+ ARR) | **5% + $0.50** per successful checkout transaction | **$0/month platform fee**; pay-only-per-transaction; unlimited sandbox test environment with full feature access | Merchant of Record (MoR) model handling global sales tax, VAT, remittance, and compliance out of the box |
+| **[Recurly](https://recurly.com/)** | **~$50M - $60M ARR** (Private Equity backed by Accel-KKR) | **$249/month** (Starter plan) + 0.9% of billing volume past $40,000/month included allowance | **90-day free trial** on the Starter plan with full feature access; unlimited sandbox testing | B2C, D2C, and subscription-heavy businesses focusing on automated dunning and involuntary-churn recovery |
+| **[Rebilly](https://www.rebilly.com/)** | **~$5M - $7M ARR** (Bootstrapped & privately held) | **$0 base fee** + revenue-share fee scaling from 1% down to 0.5% with volume tiers | **30-day free trial** with no credit card required; permanent free sandbox developer account | High-flexibility payment orchestration, multi-gateway cascading, and risk/fraud routing rules |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Subscription Account Administration tools. The open-source ecosystem splits between **full billing platforms with admin UIs** and **personal subscription trackers**.
+Self-hosted, community-driven Subscription Account Administration and recurring billing platforms. Sorted by GitHub star count in descending order:
 
-### Kill Bill & Kaui
-**Stack:** Java / MySQL/MariaDB/PostgreSQL | **License:** Apache-2.0  
-Kill Bill is the most established open-source subscription billing platform, in production since 2010 [citation:2]. **Kaui** is its dedicated back-office dashboard, allowing finance and support teams to manage subscriptions, issue refunds, adjust invoices, and view real-time analytics and financial reports [citation:2][citation:3]. Kill Bill provides the full billing engine (catalog, subscriptions, invoices, payments), while Kaui provides the administrative interface that commercial platforms like Chargebee or Stripe Dashboard offer out of the box. The platform is permissively licensed (Apache-2.0), so you can fork or embed it without publishing changes [citation:3][citation:14].  
-**Best for:** Teams wanting a self-hosted billing platform with a proven admin dashboard (Kaui) and permissive licensing, accepting the operational burden of running Java/DB infrastructure.
+### 1. [Lago](https://github.com/getlago/lago) [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+* **Stack:** Ruby / PostgreSQL / Redis | **License:** AGPL-3.0
+* **Repository:** [getlago/lago](https://github.com/getlago/lago)
+* **Description:** Lago is an open-source metering and usage-based billing engine built as an alternative to Chargebee and Stripe Billing. It provides a real-time event-metering dashboard, subscription management, coupons, prepaid credits, and payment gateway orchestration.
 
-### Lago
-**Stack:** Ruby / PostgreSQL / Redis | **License:** AGPL-3.0  
-Lago is the most widely adopted open-source billing engine for usage-based and subscription pricing, positioned as an alternative to Chargebee, Recurly, and Stripe Billing [citation:5][citation:11]. It provides a dashboard for managing plans, customers, invoices, coupons, and prepaid credits. **Important limitation:** The customer portal, role-based access, and on-prem deployment sit in Lago Premium (quote-only), while the community edition is AGPL-3.0 and free to self-host [citation:9]. The dashboard is functional but less polished than commercial consoles, and Lago does not process payments itself—it pushes invoices to Stripe, Adyen, or GoCardless [citation:5].  
-**Best for:** Teams wanting a proven open-source billing engine with a usable admin dashboard, accepting AGPL licensing and the premium tier for advanced administrative features.
+### 2. [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)
+* **Stack:** PHP / Laravel / Flutter / MySQL | **License:** Elastic-2.0 (source-available)
+* **Repository:** [invoiceninja/invoiceninja](https://github.com/invoiceninja/invoiceninja)
+* **Description:** A leading open-source and source-available invoicing, client management, and recurring payments administration tool. Features client portals, expense tracking, automatic invoice generation, and recurring card processing across 30+ payment gateways.
 
-### Invoice Ninja
-**Stack:** PHP / Laravel / MySQL | **License:** Elastic-2.0 (source-available)  
-Invoice Ninja is a powerful invoicing and billing tool with a health score of 96/100 and very active development (425+ commits in 90 days) [citation:3][citation:14]. It provides an administrative interface for managing clients, invoices, recurring billing, and payments. **Important caveat:** It is source-available under the Elastic License 2.0, not OSI-approved open source, which limits commercial reuse and redistribution [citation:3].  
-**Best for:** Teams primarily needing invoicing with basic recurring billing administration, accepting the source-available licensing terms.
+### 3. [Polar](https://github.com/polarsource/polar) [![GitHub stars](https://img.shields.io/github/stars/polarsource/polar?style=social&color=white)](https://github.com/polarsource/polar/stargazers)
+* **Stack:** Python / FastAPI / Next.js / PostgreSQL | **License:** Apache-2.0
+* **Repository:** [polarsource/polar](https://github.com/polarsource/polar)
+* **Description:** An open-source monetization and billing platform designed for developers, digital products, and SaaS businesses. Features complete subscription lifecycle management, usage-based fee tracking, checkout hosting, and developer entitlements.
 
-### Akaunting
-**Stack:** PHP | **License:** BUSL-1.1 (source-available)  
-Akaunting is accounting software designed for small businesses and freelancers, with a health score of 86/100 [citation:3]. It provides administrative tools for managing invoices, expenses, and basic financial operations. Like Invoice Ninja, it is source-available under a non-OSI license (BUSL-1.1), which limits commercial reuse.  
-**Best for:** Small businesses wanting a self-hosted accounting admin interface with basic invoicing, accepting the restrictive license.
+### 4. [Akaunting](https://github.com/akaunting/akaunting) [![GitHub stars](https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white)](https://github.com/akaunting/akaunting/stargazers)
+* **Stack:** PHP / Laravel / Vue.js | **License:** BUSL-1.1 (source-available)
+* **Repository:** [akaunting/akaunting](https://github.com/akaunting/akaunting)
+* **Description:** Open-source accounting and business management suite for small businesses and freelancers. Provides back-office dashboards for tracking customer accounts, recurring invoices, billing schedules, and company cash flow.
 
-### Wallos
-**Stack:** PHP | **License:** Open Source (per project)  
-Wallos is an open-source, self-hostable **personal subscription tracker** for visualizing recurring expenses and managing a personal budget [citation:1][citation:13]. It is not a billing platform—it does not process payments or manage customer accounts for a business. Instead, it provides a dashboard for individuals to track what they are subscribed to, with calendar views, multi-currency support, and notification integrations (Discord, Telegram, email, webhooks) [citation:13].  
-**Best for:** Individuals wanting a self-hosted dashboard to track personal subscriptions and recurring expenses, not for business billing administration.
+### 5. [Wallos](https://github.com/ellite/Wallos) [![GitHub stars](https://img.shields.io/github/stars/ellite/Wallos?style=social&color=white)](https://github.com/ellite/Wallos/stargazers)
+* **Stack:** PHP / SQLite | **License:** GPL-3.0
+* **Repository:** [ellite/Wallos](https://github.com/ellite/Wallos)
+* **Description:** A self-hosted personal subscription tracker and expense manager. Features multi-currency tracking, recurring renewal calendar reminders, and notification webhooks (Discord, Telegram, Gotify, Email).
 
-### SubTracker
-**Stack:** Vue 3 / Fastify / SQLite | **License:** Open Source (per project)  
-SubTracker is a modern self-hosted subscription manager with flexible reminder rules, budgeting, analytics, AI-assisted capture, and Wallos migration support [citation:8]. Like Wallos, it is a **personal subscription tracker** rather than a business billing platform. Features include multi-currency support, calendar views, notification channels (SMTP, Telegram, Gotify, Bark, Apprise), and backup/migration tools [citation:8].  
-**Best for:** Individuals wanting a feature-rich, self-hosted personal subscription tracker with AI-assisted entry and migration from Wallos.
+### 6. [Crater](https://github.com/crater-invoice-inc/crater) [![GitHub stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers)
+* **Stack:** PHP / Laravel / Vue.js / React Native | **License:** AGPL-3.0
+* **Repository:** [crater-invoice-inc/crater](https://github.com/crater-invoice-inc/crater)
+* **Description:** Open-source invoicing and payment administration suite built for freelancers and small businesses. Includes account dashboards for client management, automated payment reminders, recurring invoice generation, and mobile apps.
+
+### 7. [Flexprice](https://github.com/flexprice/flexprice) [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice) [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers)
+* **Stack:** Go / PostgreSQL / ClickHouse | **License:** AGPL-3.0
+* **Repository:** [flexprice/flexprice](https://github.com/flexprice/flexprice)
+* **Description:** Open-source usage-based pricing and billing infrastructure for SaaS companies and developers. Provides real-time usage metering, wallet credits & top-ups, tiered and seat-based subscriptions, and no-code administrative pricing configuration.
+
+### 8. [Kill Bill & Kaui](https://github.com/killbill/killbill) [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+* **Stack:** Java / MySQL / MariaDB / PostgreSQL | **License:** Apache-2.0
+* **Repository:** [killbill/killbill](https://github.com/killbill/killbill) (Dashboard: [killbill/killbill-admin-ui](https://github.com/killbill/killbill-admin-ui))
+* **Description:** Enterprise-grade open-source subscription billing and payments engine in production since 2010. Bundled with **Kaui** (Kill Bill Administrative User Interface), it enables finance and customer support teams to manage accounts, process refunds, view invoices, and execute complex dunning workflows.
+
+### 9. [OpenMeter](https://github.com/openmeterio/openmeter) [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)
+* **Stack:** Go / ClickHouse / Kafka / PostgreSQL | **License:** Apache-2.0
+* **Repository:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter)
+* **Description:** Cloud-native open-source usage metering and AI-token consumption tracking engine. Bridges the gap between application usage data and billing platforms like Stripe and Lago, enabling metered recurring pricing.
+
+### 10. [Tier](https://github.com/tierrun/tier) [![GitHub stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers)
+* **Stack:** Go | **License:** BSD-3-Clause
+* **Repository:** [tierrun/tier](https://github.com/tierrun/tier)
+* **Description:** Open-source pricing engine and SDK for Stripe. Manages pricing models, entitlement checking, feature metering, and tier transitions in code with JSON/YAML configuration without vendor lock-in.
+
+### 11. [UniBee](https://github.com/UniBee-Billing/unibee) [![GitHub stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers)
+* **Stack:** Go / Vue.js / MySQL | **License:** AGPL-3.0
+* **Repository:** [UniBee-Billing/unibee](https://github.com/UniBee-Billing/unibee)
+* **Description:** Open-source subscription billing management system equipped with a dedicated merchant admin portal, customer self-service portal, user tier access control, and multiple payment gateway connectors.
+
+### 12. [SubTracker](https://github.com/Smile-QWQ/SubTracker) [![GitHub stars](https://img.shields.io/github/stars/Smile-QWQ/SubTracker?style=social&color=white)](https://github.com/Smile-QWQ/SubTracker/stargazers)
+* **Stack:** Vue 3 / Fastify / SQLite | **License:** GPL-3.0
+* **Repository:** [Smile-QWQ/SubTracker](https://github.com/Smile-QWQ/SubTracker)
+* **Description:** Modern self-hosted personal subscription manager with renewal calendar notifications, budgeting analytics, AI-assisted capture, Wallos data migration support, and multi-currency tracking.
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Admin Dashboard | Business Billing | Self-Hosted | Best For |
-|----------|---------|-------|-----------------|------------------|-------------|----------|
-| **Stripe Dashboard** | Proprietary | Cloud | ✅ | ✅ | ❌ | Stripe-native teams |
-| **Chargebee** | Proprietary | Cloud | ✅ | ✅ | ❌ | Mid-market subscription ops |
-| **Zuora Central** | Proprietary | Cloud | ✅ | ✅ | ❌ | Enterprise revenue recognition |
-| **Recurly Admin** | Proprietary | Cloud | ✅ | ✅ | ❌ | Dunning + churn recovery |
-| **Kill Bill + Kaui** | Apache-2.0 | Java/DB | ✅ Kaui | ✅ | ✅ | Permissive OSS billing + admin |
-| **Lago** | AGPL-3.0 | Ruby/Postgres | ✅ (Basic) | ✅ | ✅ | Usage billing + dashboard |
-| **Invoice Ninja** | Elastic-2.0 | PHP/MySQL | ✅ | ✅ (Invoicing) | ✅ | Invoicing + basic recurring |
-| **Akaunting** | BUSL-1.1 | PHP | ✅ | (Accounting) | ✅ | Small business accounting |
-| **Wallos** | Open Source | PHP | ✅ (Personal) | ❌ | ✅ | Personal subscription tracking |
-| **SubTracker** | Open Source | Vue/Fastify | ✅ (Personal) | ❌ | ✅ | Personal tracker + AI |
+| Software | License | Model | Admin Dashboard | Business Billing | Self-Hosted | Best For |
+|:---|:---|:---|:---:|:---:|:---:|:---|
+| **[Stripe Billing](https://stripe.com/billing)** | Proprietary | Cloud SaaS | ✅ | ✅ | ❌ | Developer-first teams using Stripe |
+| **[Chargebee](https://www.chargebee.com/)** | Proprietary | Cloud SaaS | ✅ | ✅ | ❌ | Mid-market subscription operations & CPQ |
+| **[Zuora Central](https://www.zuora.com/)** | Proprietary | Enterprise Cloud | ✅ | ✅ | ❌ | Enterprise quote-to-cash & ASC 606 revenue recognition |
+| **[Paddle](https://www.paddle.com/)** | Proprietary | Merchant of Record | ✅ | ✅ | ❌ | Global SaaS tax compliance & automated remittance |
+| **[Recurly](https://recurly.com/)** | Proprietary | Cloud SaaS | ✅ | ✅ | ❌ | Churn reduction, smart dunning & DTC subscriptions |
+| **[Rebilly](https://www.rebilly.com/)** | Proprietary | Cloud SaaS | ✅ | ✅ | ❌ | Multi-gateway cascading & payment orchestration |
+| **[Lago](https://github.com/getlago/lago)** | AGPL-3.0 | Self-Hosted / Cloud | ✅ | ✅ | ✅ | Usage-based metering & modern OSS billing engine |
+| **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | Elastic-2.0 | Self-Hosted / Cloud | ✅ | ✅ | ✅ | Invoicing, client portal & recurring billing |
+| **[Polar](https://github.com/polarsource/polar)** | Apache-2.0 | Self-Hosted / Cloud | ✅ | ✅ | ✅ | Modern developer monetization & SaaS subscriptions |
+| **[Akaunting](https://github.com/akaunting/akaunting)** | BUSL-1.1 | Self-Hosted / Cloud | ✅ | Basic | ✅ | Freelancers & small business accounting |
+| **[Wallos](https://github.com/ellite/Wallos)** | GPL-3.0 | Self-Hosted | ✅ | ❌ (Personal) | ✅ | Personal recurring subscription tracking |
+| **[Crater](https://github.com/crater-invoice-inc/crater)** | AGPL-3.0 | Self-Hosted | ✅ | ✅ | ✅ | Invoicing, recurring billing & mobile management |
+| **[Flexprice](https://github.com/flexprice/flexprice)** | AGPL-3.0 | Self-Hosted / Cloud | ✅ | ✅ | ✅ | Real-time usage metering & credit top-ups |
+| **[Kill Bill + Kaui](https://github.com/killbill/killbill)** | Apache-2.0 | Self-Hosted | ✅ (Kaui) | ✅ | ✅ | Enterprise-grade permissive OSS recurring billing |
+| **[OpenMeter](https://github.com/openmeterio/openmeter)** | Apache-2.0 | Self-Hosted / Cloud | ✅ | Metering | ✅ | Real-time usage metering & AI token consumption |
+| **[Tier](https://github.com/tierrun/tier)** | BSD-3-Clause | Self-Hosted / Cloud | CLI / SDK | ✅ | ✅ | Pricing-as-code & entitlement checking for Stripe |
+| **[UniBee](https://github.com/UniBee-Billing/unibee)** | AGPL-3.0 | Self-Hosted | ✅ | ✅ | ✅ | All-in-one recurring billing with merchant & user portal |
+| **[SubTracker](https://github.com/Smile-QWQ/SubTracker)** | GPL-3.0 | Self-Hosted | ✅ | ❌ (Personal) | ✅ | Personal subscription tracking with AI extraction |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Subscription Account Administration tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source or notable subscription account administration tool, recurring billing platform, or usage-metering engine that belongs here, please feel free to contribute:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between business billing platforms with admin dashboards (**Kill Bill + Kaui**, **Lago**) and personal subscription trackers (**Wallos**, **SubTracker**). **Kill Bill with Kaui** is the closest open-source equivalent to a commercial administrative console, providing a dedicated back-office UI for managing subscriptions, refunds, and invoices under a permissive Apache-2.0 license [citation:2][citation:3]. Lago is the strongest choice for usage-based billing with a dashboard, but advanced administrative features (customer portal, RBAC) are gated to its premium tier [citation:9].
+1. Fork this repository.
+2. Create your branch: `git checkout -b feature/add-new-platform`.
+3. Add the project with details (repository, stack, license, star badge, and description).
+4. Submit a Pull Request!
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository is curated and released under the [CC0 1.0 Universal (Public Domain)](LICENSE). Listed software projects, trademarks, and logos retain their respective licenses and rights.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **If you found this curated list helpful, please consider starring the repository!** ⭐
