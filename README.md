@@ -8,7 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Subscription-Account-Administration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Subscription-Account-Administration?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Subscription-Account-Administration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Subscription-Account-Administration?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Subscription-Account-Administration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Subscription-Account-Administration?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -53,64 +53,64 @@ Commercial, cloud-hosted Subscription Account Administration platforms sorted by
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Subscription Account Administration and recurring billing platforms. Sorted by GitHub star count in descending order ⭐:
+Self-hosted, community-driven Subscription Account Administration and recurring billing platforms. Sorted by GitHub Stars_Count in descending order ⭐:
 
-### 1. [Lago](https://github.com/getlago/lago) [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) 🌊
+### 1. [Lago](https://github.com/getlago/lago) [![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) 🌊
 * **Stack:** Ruby / PostgreSQL / Redis ⚙️ | **License:** AGPL-3.0 📜
 * **Repository:** [getlago/lago](https://github.com/getlago/lago)
 * **Description:** Lago is an open-source metering and usage-based billing engine built as an alternative to Chargebee and Stripe Billing. It provides a real-time event-metering dashboard, subscription management, coupons, prepaid credits, and payment gateway orchestration.
 
-### 2. [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) 🥷
+### 2. [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) [![GitHub_Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) 🥷
 * **Stack:** PHP / Laravel / Flutter / MySQL ⚙️ | **License:** Elastic-2.0 (source-available) 📜
 * **Repository:** [invoiceninja/invoiceninja](https://github.com/invoiceninja/invoiceninja)
 * **Description:** A leading open-source and source-available invoicing, client management, and recurring payments administration tool. Features client portals, expense tracking, automatic invoice generation, and recurring card processing across 30+ payment gateways.
 
-### 3. [Polar](https://github.com/polarsource/polar) [![GitHub stars](https://img.shields.io/github/stars/polarsource/polar?style=social&color=white)](https://github.com/polarsource/polar/stargazers) ❄️
+### 3. [Polar](https://github.com/polarsource/polar) [![GitHub_Stars](https://img.shields.io/github/stars/polarsource/polar?style=social&color=white)](https://github.com/polarsource/polar/stargazers) ❄️
 * **Stack:** Python / FastAPI / Next.js / PostgreSQL ⚙️ | **License:** Apache-2.0 📜
 * **Repository:** [polarsource/polar](https://github.com/polarsource/polar)
 * **Description:** An open-source monetization and billing platform designed for developers, digital products, and SaaS businesses. Features complete subscription lifecycle management, usage-based fee tracking, checkout hosting, and developer entitlements.
 
-### 4. [Akaunting](https://github.com/akaunting/akaunting) [![GitHub stars](https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white)](https://github.com/akaunting/akaunting/stargazers) 💼
+### 4. [Akaunting](https://github.com/akaunting/akaunting) [![GitHub_Stars](https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white)](https://github.com/akaunting/akaunting/stargazers) 💼
 * **Stack:** PHP / Laravel / Vue.js ⚙️ | **License:** BUSL-1.1 (source-available) 📜
 * **Repository:** [akaunting/akaunting](https://github.com/akaunting/akaunting)
 * **Description:** Open-source accounting and business management suite for small businesses and freelancers. Provides back-office dashboards for tracking customer accounts, recurring invoices, billing schedules, and company cash flow.
 
-### 5. [Wallos](https://github.com/ellite/Wallos) [![GitHub stars](https://img.shields.io/github/stars/ellite/Wallos?style=social&color=white)](https://github.com/ellite/Wallos/stargazers) 👛
+### 5. [Wallos](https://github.com/ellite/Wallos) [![GitHub_Stars](https://img.shields.io/github/stars/ellite/Wallos?style=social&color=white)](https://github.com/ellite/Wallos/stargazers) 👛
 * **Stack:** PHP / SQLite ⚙️ | **License:** GPL-3.0 📜
 * **Repository:** [ellite/Wallos](https://github.com/ellite/Wallos)
 * **Description:** A self-hosted personal subscription tracker and expense manager. Features multi-currency tracking, recurring renewal calendar reminders, and notification webhooks (Discord, Telegram, Gotify, Email).
 
-### 6. [Crater](https://github.com/crater-invoice-inc/crater) [![GitHub stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers) ☄️
+### 6. [Crater](https://github.com/crater-invoice-inc/crater) [![GitHub_Stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers) ☄️
 * **Stack:** PHP / Laravel / Vue.js / React Native ⚙️ | **License:** AGPL-3.0 📜
 * **Repository:** [crater-invoice-inc/crater](https://github.com/crater-invoice-inc/crater)
 * **Description:** Open-source invoicing and payment administration suite built for freelancers and small businesses. Includes account dashboards for client management, automated payment reminders, recurring invoice generation, and mobile apps.
 
-### 7. [Flexprice](https://github.com/flexprice/flexprice) [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers) ⚡
+### 7. [Flexprice](https://github.com/flexprice/flexprice) [![GitHub_Stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers) ⚡
 * **Stack:** Go / PostgreSQL / ClickHouse ⚙️ | **License:** AGPL-3.0 📜
 * **Repository:** [flexprice/flexprice](https://github.com/flexprice/flexprice)
 * **Description:** Open-source usage-based pricing and billing infrastructure for SaaS companies and developers. Provides real-time usage metering, wallet credits & top-ups, tiered and seat-based subscriptions, and no-code administrative pricing configuration.
 
-### 8. [Kill Bill & Kaui](https://github.com/killbill/killbill) [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) 🗡️
+### 8. [Kill Bill & Kaui](https://github.com/killbill/killbill) [![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) 🗡️
 * **Stack:** Java / MySQL / MariaDB / PostgreSQL ⚙️ | **License:** Apache-2.0 📜
 * **Repository:** [killbill/killbill](https://github.com/killbill/killbill) (Dashboard: [killbill/killbill-admin-ui](https://github.com/killbill/killbill-admin-ui))
 * **Description:** Enterprise-grade open-source subscription billing and payments engine in production since 2010. Bundled with **Kaui** (Kill Bill Administrative User Interface), it enables finance and customer support teams to manage accounts, process refunds, view invoices, and execute complex dunning workflows.
 
-### 9. [OpenMeter](https://github.com/openmeterio/openmeter) [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers) ⏱️
+### 9. [OpenMeter](https://github.com/openmeterio/openmeter) [![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers) ⏱️
 * **Stack:** Go / ClickHouse / Kafka / PostgreSQL ⚙️ | **License:** Apache-2.0 📜
 * **Repository:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter)
 * **Description:** Cloud-native open-source usage metering and AI-token consumption tracking engine. Bridges the gap between application usage data and billing platforms like Stripe and Lago, enabling metered recurring pricing.
 
-### 10. [Tier](https://github.com/tierrun/tier) [![GitHub stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers) 🪜
+### 10. [Tier](https://github.com/tierrun/tier) [![GitHub_Stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers) 🪜
 * **Stack:** Go ⚙️ | **License:** BSD-3-Clause 📜
 * **Repository:** [tierrun/tier](https://github.com/tierrun/tier)
 * **Description:** Open-source pricing engine and SDK for Stripe. Manages pricing models, entitlement checking, feature metering, and tier transitions in code with JSON/YAML configuration without vendor lock-in.
 
-### 11. [UniBee](https://github.com/UniBee-Billing/unibee) [![GitHub stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers) 🐝
+### 11. [UniBee](https://github.com/UniBee-Billing/unibee) [![GitHub_Stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers) 🐝
 * **Stack:** Go / Vue.js / MySQL ⚙️ | **License:** AGPL-3.0 📜
 * **Repository:** [UniBee-Billing/unibee](https://github.com/UniBee-Billing/unibee)
 * **Description:** Open-source subscription billing management system equipped with a dedicated merchant admin portal, customer self-service portal, user tier access control, and multiple payment gateway connectors.
 
-### 12. [SubTracker](https://github.com/Smile-QWQ/SubTracker) [![GitHub stars](https://img.shields.io/github/stars/Smile-QWQ/SubTracker?style=social&color=white)](https://github.com/Smile-QWQ/SubTracker/stargazers) 📱
+### 12. [SubTracker](https://github.com/Smile-QWQ/SubTracker) [![GitHub_Stars](https://img.shields.io/github/stars/Smile-QWQ/SubTracker?style=social&color=white)](https://github.com/Smile-QWQ/SubTracker/stargazers) 📱
 * **Stack:** Vue 3 / Fastify / SQLite ⚙️ | **License:** GPL-3.0 📜
 * **Repository:** [Smile-QWQ/SubTracker](https://github.com/Smile-QWQ/SubTracker)
 * **Description:** Modern self-hosted personal subscription manager with renewal calendar notifications, budgeting analytics, AI-assisted capture, Wallos data migration support, and multi-currency tracking.
@@ -166,7 +166,7 @@ Contributions are welcome! If you know of an open-source or notable subscription
 
 1. Fork this repository 🍴
 2. Create your branch: `git checkout -b feature/add-new-platform` 🌿
-3. Add the project with details (repository, stack, license, star badge, and description) ✨
+3. Add the project with details (repository, stack, license, Stars_Badge, and description) ✨
 4. Submit a Pull Request! 🚀
 
 ---
